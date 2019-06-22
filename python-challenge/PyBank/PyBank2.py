@@ -1,5 +1,6 @@
 #PyBank
 
+
 import os
 import csv
 
@@ -36,30 +37,6 @@ print("Net Revenue: $"  + str(sum(profandloss)))
 print("Average Change: $" + str(sum(differences)/(len(differences)))
 print("Greatest Increase in Profits: " + str(bestmonth) + " $" + str(max(differences)))
 print("Greatest loss in Profits: $" + str(worstmonth) + " $" + str(min(differences)))
-
-
-with open (PyBankFinal.csv, 'w') as csvfile
-  csvwriter = csv.writer(csvfile, delimiter = '', quotchar = '"', 
-    quoting = csv.QUOTE_NONNUMERIC)
-
-csvwriter.writerow(["Financial Analysis"])
-csvwriter.writerow(["------------------------------"])
-csvwriter.writerow([""])
-csvwriter.writerow([""])
-csvwriter.writerow([""])
-csvwriter.writerow([""])
-csvwriter.writerow([""])
-
-      
-
-  
-
-
-  
-
-
-
-
 
 
 
